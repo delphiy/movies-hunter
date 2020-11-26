@@ -38,13 +38,16 @@
         <li>No result found for "{{ searchTerm }}"</li>
       </ul>
     </div>
-
-    <img src="@/assets/images/avatar.jpg" alt="" class="h-10 rounded-full" />
+    <AccountDropDown />
   </div>
 </template>
 
 <script>
+import AccountDropDown from "./AccountDropDown";
 export default {
+  components: {
+    AccountDropDown,
+  },
   data() {
     return {
       searchResult: [],
