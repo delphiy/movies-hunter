@@ -11,7 +11,7 @@
     <button
       @click="isOpen = false"
       v-if="isOpen"
-      class="fixed top-0 right-0 bottom-0 w-full h-full cursor-default bg-black opacity-50"
+      class="fixed top-0 right-0 bottom-0 w-full h-full cursor-default bg-black opacity-50 "
     ></button>
 
     <div
@@ -27,6 +27,7 @@
         >Support
       </a>
       <a
+        @click.prevent="logout"
         href=""
         class="text-gray-500 block px-4 py-2 hover:bg-indigo-500 hover:text-white"
         >Logout
@@ -54,6 +55,12 @@ export default {
     return {
       isOpen: false,
     };
+  },
+
+  methods: {
+    logout() {
+      this.$store.dispatch("setUserLoggedIn", false);
+    },
   },
 };
 </script>

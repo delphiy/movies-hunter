@@ -16,7 +16,11 @@
         </router-link>
       </li>
       <li>
-        <router-link to="/profile" class="ml-5">
+        <router-link
+          to="/profile"
+          class="ml-5"
+          v-if="this.$store.getters.isUserLoggedIn"
+        >
           Profile
         </router-link>
       </li>

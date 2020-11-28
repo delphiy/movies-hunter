@@ -18,7 +18,7 @@
 </template>
 
 <script>
-import MovieItem from "./items/MovieItem";
+import MovieItem from "../items/MovieItem";
 
 export default {
   components: {

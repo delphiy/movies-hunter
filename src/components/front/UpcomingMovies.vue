@@ -1,11 +1,12 @@
 <template>
   <div id="example">
-    <h2 class="uppercase text-yellow-500 font-semibold text-lg mt-20">
+    <h2 class="uppercase text-yellow-500 font-semibold text-lg mt-20 ml-2">
       Upcoming Movies
     </h2>
     <carousel-3d
       :controls-visible="true"
       :clickable="false"
+      :key="upcomingMovies.length"
       :listData="upcomingMovies"
       :height="500"
     >
