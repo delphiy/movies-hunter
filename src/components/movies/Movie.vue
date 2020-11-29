@@ -1,12 +1,12 @@
 <template>
   <div>
     <div class="container mx-auto flex mt-20 border-b border-gray-600 pb-2">
-      <img :src="posterPath" alt="" class="w-64" />
+      <img :src="posterPath" alt="" class="w-64 md:w-full" />
       <div class="ml-24">
         <h1 class="text-4xl font-semibold">{{ this.movie.title }}</h1>
         <span class="text-gray-500 text-sm flex">
           <svg
-            class="fill-current text-yellow-500 w-4 mr-1"
+            class="fill-current text-yellow-500 w-4 h-4 mr-1"
             viewBox="0 0 24 24"
           >
             <g data-name="Layer 2">
@@ -44,9 +44,9 @@
           <a
             @click.prevent="openYouTubeModel"
             target="blank"
-            class="rounded bg-yellow-500 px-5 py-3 inline-flex text-black"
+            class="rounded bg-yellow-500 px-5 py-3 inline-flex text-black cursor-auto"
           >
-            <svg class="w-6 fill-current" viewBox="0 0 24 24">
+            <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
               <path d="M0 0h24v24H0z" fill="none" />
               <path
                 d="M10 16.5l6-4.5-6-4.5v9zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"

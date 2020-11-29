@@ -17,7 +17,7 @@
       </li>
       <li>
         <router-link to="/profile" class="ml-5">
-          Profile1
+          Profile
         </router-link>
       </li>
     </ul>
