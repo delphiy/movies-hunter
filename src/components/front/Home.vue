@@ -14,6 +14,9 @@ export default {
     PopularMovies,
     UpcomingMovies,
   },
+  mounted() {
+    console.log("Your process.env.PUBLIC_URL", process.env.PUBLIC_URL);
+  },
 };
 </script>
 

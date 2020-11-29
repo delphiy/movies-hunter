@@ -1,5 +1,5 @@
 import VueRouter from "vue-router";
-import Home from "./components/Home";
+import Home from "./components/front/Home";
 import Movie from "./components/movies/Movie";
 import Actors from "./components/actors/Actors";
 import ActorDetail from "./components/actors/ActorDetail";
@@ -8,7 +8,7 @@ let router = new VueRouter({
   mode: "history",
   routes: [
     {
-      path: "/movies-hunter/",
+      path: "/",
       name: "home",
       component: Home,
     },
