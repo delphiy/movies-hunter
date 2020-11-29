@@ -15,7 +15,10 @@ export default {
     UpcomingMovies,
   },
   mounted() {
-    console.log("Your process.env.PUBLIC_URL", process.env.PUBLIC_URL);
+    console.log(
+      "Your process.env.VUE_APP_PUBLIC_URL",
+      process.env.VUE_APP_PUBLIC_URL
+    );
   },
 };
 </script>
